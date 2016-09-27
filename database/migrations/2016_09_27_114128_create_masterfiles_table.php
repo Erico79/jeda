@@ -20,8 +20,9 @@ class CreateMasterfilesTable extends Migration
             $table->string('middle_name');
             $table->date('dob');
             $table->string('gender');
-            $table->integer('id_no');
-            $table->integer('school_id');
+            $table->string('id_no', 255);
+            $table->integer('role_id')->unsigned();
+            $table->integer('school_id')->unsigned();
             $table->timestamps();
 
         });
