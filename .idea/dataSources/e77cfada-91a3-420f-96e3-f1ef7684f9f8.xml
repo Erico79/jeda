@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - jeda@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="jeda">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="phpmyadmin"/>
+    <schema id="6" name="sys"/>
+    <table id="7" parent="1" name="classes"/>
+    <table id="8" parent="1" name="contacts"/>
+    <table id="9" parent="1" name="guardians"/>
+    <table id="10" parent="1" name="masterfiles"/>
+    <table id="11" parent="1" name="migrations"/>
+    <table id="12" parent="1" name="password_resets"/>
+    <table id="13" parent="1" name="roles"/>
+    <table id="14" parent="1" name="schools"/>
+    <table id="15" parent="1" name="streams"/>
+    <table id="16" parent="1" name="students"/>
+    <table id="17" parent="1" name="teachers"/>
+    <table id="18" parent="1" name="users"/>
+    <table id="19" parent="1" name="contact_types"/>
+    <column id="20" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="21" parent="7" name="class_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="7" name="class_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="23" parent="7" name="class_status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="24" parent="7" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="25" parent="7" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="26" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="27" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="28" parent="8" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="29" parent="8" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="30" parent="8" name="contact_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="31" parent="8" name="contacts_contact_type_id_foreign">
+      <columns>contact_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="32" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="33" parent="8" name="contacts_contact_type_id_foreign">
+      <columns>contact_type_id</columns>
+      <ref-key>~.contact_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="34" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="35" parent="9" name="masterfile_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="36" parent="9" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="37" parent="9" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="38" parent="9" name="guardians_masterfile_id_foreign">
+      <columns>masterfile_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="39" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="40" parent="9" name="guardians_masterfile_id_foreign">
+      <columns>masterfile_id</columns>
+      <ref-key>~.masterfiles.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="41" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="42" parent="10" name="sir_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="43" parent="10" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="44" parent="10" name="middle_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="45" parent="10" name="dob">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="46" parent="10" name="gender">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="47" parent="10" name="id_no">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="48" parent="10" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="49" parent="10" name="school_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="50" parent="10" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="51" parent="10" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="52" parent="10" name="masterfiles_role_id_foreign">
+      <columns>role_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="53" parent="10" name="masterfiles_school_id_foreign">
+      <columns>school_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="54" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="55" parent="10" name="masterfiles_role_id_foreign">
+      <columns>role_id</columns>
+      <ref-key>~.roles.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="56" parent="10" name="masterfiles_school_id_foreign">
+      <columns>school_id</columns>
+      <ref-key>~.schools.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="57" parent="11" name="migration">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="58" parent="11" name="batch">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="59" parent="12" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="60" parent="12" name="token">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="61" parent="12" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="62" parent="12" name="password_resets_email_index">
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="63" parent="12" name="password_resets_token_index">
+      <columns>token</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <column id="64" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="65" parent="13" name="role_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="66" parent="13" name="role_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="67" parent="13" name="role_status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="68" parent="13" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="69" parent="13" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="70" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="71" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="72" parent="14" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="73" parent="14" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="74" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="75" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="76" parent="15" name="stream_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="77" parent="15" name="stream_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="78" parent="15" name="stream_status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="79" parent="15" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="80" parent="15" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="81" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="82" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="83" parent="16" name="masterfile_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="84" parent="16" name="class_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="85" parent="16" name="stream_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="86" parent="16" name="guardian_mf_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="87" parent="16" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="88" parent="16" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="89" parent="16" name="students_guardian_mf_id_foreign">
+      <columns>guardian_mf_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="90" parent="16" name="students_masterfile_id_foreign">
+      <columns>masterfile_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="91" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="92" parent="16" name="students_masterfile_id_foreign">
+      <columns>masterfile_id</columns>
+      <ref-key>~.masterfiles.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="93" parent="16" name="students_guardian_mf_id_foreign">
+      <columns>guardian_mf_id</columns>
+      <ref-key>~.masterfiles.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="94" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="95" parent="17" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="96" parent="17" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="97" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="98" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="99" parent="18" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="100" parent="18" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="101" parent="18" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="102" parent="18" name="remember_token">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="103" parent="18" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="104" parent="18" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="105" parent="18" name="users_email_unique">
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="106" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="107" parent="18" name="users_email_unique">
+      <columns>email</columns>
+      <underlying-index>users_email_unique</underlying-index>
+    </key>
+    <column id="108" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="109" parent="19" name="contact_type_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="110" parent="19" name="contact_type_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="111" parent="19" name="contact_type_status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="112" parent="19" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="113" parent="19" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="114" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

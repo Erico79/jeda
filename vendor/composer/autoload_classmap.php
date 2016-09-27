@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+<<<<<<< HEAD
     'AddSchoolidFk' => $baseDir . '/database/migrations/2016_09_27_124759_add_schoolid_fk.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Contact' => $baseDir . '/app/Contact.php',
@@ -54,11 +55,19 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
+=======
+    'AddFksMfs' => $baseDir . '/database/migrations/2016_09_27_155225_add_fks_mfs.php',
+    'ContactTypeIdfks' => $baseDir . '/database/migrations/2016_09_27_163636_contact_type_idfks.php',
+    'CreateClassesTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_classes_table.php',
+    'CreateContactTypesTable' => $baseDir . '/database/migrations/2016_09_27_162746_create_contact_types_table.php',
+>>>>>>> 020215410b39301a31ded8bfc432147c27c76c13
     'CreateContactsTable' => $baseDir . '/database/migrations/2016_09_27_114536_create_contacts_table.php',
+    'CreateGuardiansTable' => $baseDir . '/database/migrations/2016_09_27_154813_create_guardians_table.php',
     'CreateMasterfilesTable' => $baseDir . '/database/migrations/2016_09_27_114128_create_masterfiles_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateRolesTable' => $baseDir . '/database/migrations/2016_09_27_114253_create_roles_table.php',
     'CreateSchoolsTable' => $baseDir . '/database/migrations/2016_09_27_114609_create_schools_table.php',
+    'CreateStreamsTable' => $baseDir . '/database/migrations/2016_09_27_154742_create_streams_table.php',
     'CreateStudentsTable' => $baseDir . '/database/migrations/2016_09_27_114315_create_students_table.php',
     'CreateTeachersTable' => $baseDir . '/database/migrations/2016_09_27_114332_create_teachers_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',

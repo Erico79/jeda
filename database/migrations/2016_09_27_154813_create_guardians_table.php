@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSchoolidFk extends Migration
+class CreateGuardiansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class AddSchoolidFk extends Migration
      */
     public function up()
     {
-        Schema::table('masterfiles', function (Blueprint $table) {
-            $table->integer('school_id')->unsigned()->change();
-            $table->foreign('school_id')
+        Schema::create('guardians', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('masterfile_id')->unsigned();
+            $table->foreign('masterfile_id')
                 ->references('id')
-                ->on('schools')
+                ->on('masterfiles')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
@@ -30,8 +32,6 @@ class AddSchoolidFk extends Migration
      */
     public function down()
     {
-        Schema::table('masterfiles', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('guardians');
     }
 }

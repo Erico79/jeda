@@ -15,6 +15,20 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('masterfile_id')->unsigned();
+            $table->integer('class_id')->unsigned();
+            $table->integer('stream_id')->unsigned();
+            $table->integer('guardian_mf_id')->unsigned();
+            $table->foreign('masterfile_id')
+                ->references('id')
+                ->on('masterfiles')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreign('guardian_mf_id')
+                ->references('id')
+                ->on('masterfiles')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
