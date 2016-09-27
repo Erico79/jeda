@@ -7,7 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddFksMfs' => $baseDir . '/database/migrations/2016_09_27_155225_add_fks_mfs.php',
+    'ContactTypeIdfks' => $baseDir . '/database/migrations/2016_09_27_163636_contact_type_idfks.php',
     'CreateClassesTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_classes_table.php',
+    'CreateContactTypesTable' => $baseDir . '/database/migrations/2016_09_27_162746_create_contact_types_table.php',
     'CreateContactsTable' => $baseDir . '/database/migrations/2016_09_27_114536_create_contacts_table.php',
     'CreateGuardiansTable' => $baseDir . '/database/migrations/2016_09_27_154813_create_guardians_table.php',
     'CreateMasterfilesTable' => $baseDir . '/database/migrations/2016_09_27_114128_create_masterfiles_table.php',
