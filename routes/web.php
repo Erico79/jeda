@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Registration Module
+Route::get('/add-masterfile', 'MasterfileController@index');
+Route::get('/update-masterfile', 'MasterfileController@update');
+Route::get('/all-masterfiles', 'MasterfileController@allMfs');
+Route::get('/all-teachers', 'MasterfileController@allTeachers');
+Route::get('/all-guardians', 'MasterfileController@allGuardians');
+Route::get('/all-students', 'MasterfileController@allStudents');
+Route::get('/all-ss', 'MasterfileController@allSS');
