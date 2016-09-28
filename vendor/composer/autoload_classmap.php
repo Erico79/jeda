@@ -6,16 +6,19 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-<<<<<<< HEAD
-    'AddSchoolidFk' => $baseDir . '/database/migrations/2016_09_27_124759_add_schoolid_fk.php',
+    'AddFksMfs' => $baseDir . '/database/migrations/2016_09_27_155225_add_fks_mfs.php',
+    'App\\Class' => $baseDir . '/app/Class.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Contact' => $baseDir . '/app/Contact.php',
+    'App\\ContactType' => $baseDir . '/app/ContactType.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Guardian' => $baseDir . '/app/Guardian.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\MasterfileController' => $baseDir . '/app/Http/Controllers/MasterfileController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -28,6 +31,7 @@ return array(
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Role' => $baseDir . '/app/Role.php',
     'App\\School' => $baseDir . '/app/School.php',
+    'App\\Stream' => $baseDir . '/app/Stream.php',
     'App\\Student' => $baseDir . '/app/Student.php',
     'App\\Teacher' => $baseDir . '/app/Teacher.php',
     'App\\User' => $baseDir . '/app/User.php',
@@ -55,12 +59,9 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
-=======
-    'AddFksMfs' => $baseDir . '/database/migrations/2016_09_27_155225_add_fks_mfs.php',
     'ContactTypeIdfks' => $baseDir . '/database/migrations/2016_09_27_163636_contact_type_idfks.php',
     'CreateClassesTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_classes_table.php',
     'CreateContactTypesTable' => $baseDir . '/database/migrations/2016_09_27_162746_create_contact_types_table.php',
->>>>>>> 020215410b39301a31ded8bfc432147c27c76c13
     'CreateContactsTable' => $baseDir . '/database/migrations/2016_09_27_114536_create_contacts_table.php',
     'CreateGuardiansTable' => $baseDir . '/database/migrations/2016_09_27_154813_create_guardians_table.php',
     'CreateMasterfilesTable' => $baseDir . '/database/migrations/2016_09_27_114128_create_masterfiles_table.php',
