@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-<<<<<<< HEAD
+
     'AddSchoolidFk' => $baseDir . '/database/migrations/2016_09_27_124759_add_schoolid_fk.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Contact' => $baseDir . '/app/Contact.php',
@@ -55,12 +55,10 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
-=======
     'AddFksMfs' => $baseDir . '/database/migrations/2016_09_27_155225_add_fks_mfs.php',
     'ContactTypeIdfks' => $baseDir . '/database/migrations/2016_09_27_163636_contact_type_idfks.php',
     'CreateClassesTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_classes_table.php',
     'CreateContactTypesTable' => $baseDir . '/database/migrations/2016_09_27_162746_create_contact_types_table.php',
->>>>>>> 020215410b39301a31ded8bfc432147c27c76c13
     'CreateContactsTable' => $baseDir . '/database/migrations/2016_09_27_114536_create_contacts_table.php',
     'CreateGuardiansTable' => $baseDir . '/database/migrations/2016_09_27_154813_create_guardians_table.php',
     'CreateMasterfilesTable' => $baseDir . '/database/migrations/2016_09_27_114128_create_masterfiles_table.php',
