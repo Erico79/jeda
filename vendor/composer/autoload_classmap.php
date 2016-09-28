@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddFksMfs' => $baseDir . '/database/migrations/2016_09_27_155225_add_fks_mfs.php',
+<<<<<<< HEAD
     'App\\Class' => $baseDir . '/app/Class.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Contact' => $baseDir . '/app/Contact.php',
@@ -60,11 +61,16 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
+=======
+    'AddStatusColumn' => $baseDir . '/database/migrations/2016_09_28_092005_add_status_column.php',
+    'AddStudentsFks' => $baseDir . '/database/migrations/2016_09_28_121140_add_students_fks.php',
+>>>>>>> 8578593d3e0947a8557bac23a1a728ab6bdc9c42
     'ContactTypeIdfks' => $baseDir . '/database/migrations/2016_09_27_163636_contact_type_idfks.php',
+    'ContactTypeSeeder' => $baseDir . '/database/seeds/ContactTypeSeeder.php',
     'CorrectSurnameColumn' => $baseDir . '/database/migrations/2016_09_28_073320_correct_surname_column.php',
-    'CreateClassesTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_classes_table.php',
     'CreateContactTypesTable' => $baseDir . '/database/migrations/2016_09_27_162746_create_contact_types_table.php',
     'CreateContactsTable' => $baseDir . '/database/migrations/2016_09_27_114536_create_contacts_table.php',
+    'CreateFormsTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_forms_table.php',
     'CreateGuardiansTable' => $baseDir . '/database/migrations/2016_09_27_154813_create_guardians_table.php',
     'CreateMasterfilesTable' => $baseDir . '/database/migrations/2016_09_27_114128_create_masterfiles_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
@@ -857,6 +863,7 @@ return array(
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
+    'FormSeeder' => $baseDir . '/database/seeds/FormSeeder.php',
     'Hamcrest\\Arrays\\IsArray' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
     'Hamcrest\\Arrays\\IsArrayContaining' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
     'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -2104,6 +2111,7 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
+<<<<<<< HEAD
     'PhpParser\\Autoloader' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Autoloader.php',
     'PhpParser\\Builder' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Builder.php',
     'PhpParser\\BuilderAbstract' => $vendorDir . '/nikic/php-parser/lib/PhpParser/BuilderAbstract.php',
@@ -2548,6 +2556,9 @@ return array(
     'Ramsey\\Uuid\\UuidFactory' => $vendorDir . '/ramsey/uuid/src/UuidFactory.php',
     'Ramsey\\Uuid\\UuidFactoryInterface' => $vendorDir . '/ramsey/uuid/src/UuidFactoryInterface.php',
     'Ramsey\\Uuid\\UuidInterface' => $vendorDir . '/ramsey/uuid/src/UuidInterface.php',
+=======
+    'RolesSeeder' => $baseDir . '/database/seeds/RolesSeeder.php',
+>>>>>>> 8578593d3e0947a8557bac23a1a728ab6bdc9c42
     'SebastianBergmann\\CodeCoverage\\CodeCoverage' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage.php',
     'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => $vendorDir . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
     'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => $vendorDir . '/phpunit/php-code-coverage/src/Driver/Driver.php',

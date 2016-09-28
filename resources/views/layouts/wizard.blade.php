@@ -391,7 +391,6 @@ you can add as many as you like
 
             rules: {
                 email: {
-                    required: true,
                     email: "Your email address must be in the format of name@domain.com"
                 },
                 fname: {
@@ -400,23 +399,24 @@ you can add as many as you like
                 lname: {
                     required: true
                 },
-                country: {
+                role: {
                     required: true
                 },
-                city: {
+                gender: {
                     required: true
                 },
-                postal: {
-                    required: true,
-                    minlength: 4
+                adm_no: {
+                    required: true
                 },
                 wphone: {
                     required: true,
                     minlength: 10
                 },
-                hphone: {
-                    required: true,
-                    minlength: 10
+                physical_address: {
+                    required: true
+                },
+                contact_type: {
+                    required: true
                 }
             },
 
@@ -424,9 +424,12 @@ you can add as many as you like
                 fname: "Please specify your First name",
                 lname: "Please specify your Last name",
                 email: {
-                    required: "We need your email address to contact you",
-                    email: "Your email address must be in the format of name@domain.com"
-                }
+                    required: "You must specify the email address",
+                    email: "The email address must be in the format of name@domain.com"
+                },
+                adm_no: "Please provide the Student's Admission No",
+                role: "You must select the Role first",
+                gender: "You must select the Gender"
             },
 
             highlight: function (element) {
