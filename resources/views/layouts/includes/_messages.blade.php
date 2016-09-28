@@ -1,8 +1,10 @@
 @if (Session::has('success'))
+    <br>
     <div class="alert alert-success" role="alert">
         <button class="close" data-dismiss="alert"> × </button>
         <i class="fa fa-fw fa-check"></i><strong>Success </strong> {{ Session::get('success') }}
     </div>
+    <br>
 
 @endif
 

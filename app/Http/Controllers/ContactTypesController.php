@@ -18,7 +18,7 @@ class ContactTypesController extends Controller
     public function index()
     {
         $contact_types = ContactType::all();
-        return view('contact_types.index')->withContactTypes($contact_types);
+        return view('contact_types.index')->withcontact_types($contact_types);
     }
 
     /**
