@@ -16,7 +16,7 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('masterfile_id')->unsigned();
-            $table->integer('class_id')->unsigned();
+            $table->integer('form_id')->unsigned();
             $table->integer('stream_id')->unsigned();
             $table->integer('guardian_mf_id')->unsigned();
             $table->foreign('masterfile_id')
