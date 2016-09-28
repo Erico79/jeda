@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\ContactType;
+use Illuminate\Support\Facades\Session;
 
 class ContactTypesController extends Controller
 {
@@ -15,7 +17,8 @@ class ContactTypesController extends Controller
      */
     public function index()
     {
-        return view('contact_types.index');
+        $contact_types = ContactType::all();
+        return view('contact_types.index')->withContactTypes($contact_types);
     }
 
     /**
@@ -36,8 +39,28 @@ class ContactTypesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //var_dump($request);
+        //validation
+        $this->validate($request , array(
+            'contact_type_name'=>'required|min:2|max:10|unique:contact_types,contact_type_name',
+            'contact_type_code'=>'required|min:2|max:10|unique:contact_types,contact_type_code',
+            'contact_type_status'=>'required'
+        ));
+        $contact_type = new ContactType();
 
+        //define database fields
+        $contact_type->contact_type_name = $request->contact_type_name;
+        $contact_type->contact_type_code = $request->contact_type_code;
+        $contact_type->contact_type_status = $request->contact_type_status;
+
+        //save the data into the database
+        $contact_type->save();
+
+        //after saving successfully display a success message
+        Session::flash('success','Contact type has been added');
+
+
+        return redirect()->route('contact_types.index');
     }
 
     /**
