@@ -3,12 +3,14 @@
 
 <div class="row">
 
-    <div class="col-sm-12">
+    <div class="col-sm-6">
         <div class="form-group">
             <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-envelope fa-lg fa-fw"></i></span>
+                <span class="input-group-addon"><i class="fa fa-list fa-lg fa-fw"></i></span>
                 {{--<input class="form-control input-lg" placeholder="email@address.com" type="text" name="email" id="email">--}}
-                <select name="role"></select>
+                <select name="role" class="form-control input-lg">
+                    <option>--Choose Role--</option>
+                </select>
             </div>
         </div>
 
