@@ -55,18 +55,15 @@
                         <a href="{{ url('all-ss') }}" title="All Masterfiles"><i class="fa fa-lg fa-fw fa-list"></i> <span class="menu-item-parent">Subordinate Staff</span></a>
                     </li>
                 </ul>
-<<<<<<< HEAD
             </li>
             <li>
-                <a href="#" title="Forms"><i class="fa fa-lg fa-fw fa-bars"></i> <span class="menu-item-parent">Forms</span></a>
+                <a href="#" title="Forms"><i class="fa fa-lg fa-fw fa-bars"></i> <span class="menu-item-parent">Class</span></a>
                 <ul>
                     <li class="">
-                        <a href="{{ url('manage_forms') }}" title="Manage Forms"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Manage Forms</span></a>
+                        <a href="{{ url('manage_forms') }}" title="Manage Forms"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Manage Class</span></a>
                     </li>
                 </ul>
             </li>
-            {{--</li>--}}
-=======
             <li class="top-menu-invisible">
                 <a href="#"><i class="fa fa-lg fa-fw fa-book txt-color-blue"></i> <span class="menu-item-parent">Academics</span></a>
                 <ul>
@@ -74,7 +71,6 @@
                         <a href="{{ url('subject') }}" title="subjects"><i class="fa fa-lg fa-fw fa-pencil"></i> <span class="menu-item-parent">subjects</span></a>
                     </li>
                 </ul>{{--</li>--}}
->>>>>>> ac262761bca46a878d3761b141b372d2b2f2ad40
             {{--<li>--}}
                 {{--<a href="inbox.html"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Outlook</span> <span class="badge pull-right inbox-badge margin-right-13">14</span></a>--}}
             {{--</li>--}}
