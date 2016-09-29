@@ -2,17 +2,15 @@
 
     <!-- User info -->
     <div class="login-info">
-				<span> <!-- User image size is adjusted inside CSS, it should stay as it -->
-
-					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-						<img src="{{ URL::asset('img/avatars/sunny.png') }}" alt="me" class="online" />
-						<span>
-							john.doe
-						</span>
-						<i class="fa fa-angle-down"></i>
-					</a>
-
-				</span>
+        <span> <!-- User image size is adjusted inside CSS, it should stay as it -->
+            <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+                <img src="{{ URL::asset('img/avatars/sunny.png') }}" alt="me" class="online" />
+                <span>
+                    john.doe
+                </span>
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </span>
     </div>
     <!-- end user info -->
 
@@ -57,6 +55,15 @@
                         <a href="{{ url('all-ss') }}" title="All Masterfiles"><i class="fa fa-lg fa-fw fa-list"></i> <span class="menu-item-parent">Subordinate Staff</span></a>
                     </li>
                 </ul>
+            </li>
+            <li>
+                <a href="#" title="Forms"><i class="fa fa-lg fa-fw fa-bars"></i> <span class="menu-item-parent">Forms</span></a>
+                <ul>
+                    <li class="">
+                        <a href="{{ url('manage_forms') }}" title="Manage Forms"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Manage Forms</span></a>
+                    </li>
+                </ul>
+            </li>
             {{--</li>--}}
             {{--<li>--}}
                 {{--<a href="inbox.html"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Outlook</span> <span class="badge pull-right inbox-badge margin-right-13">14</span></a>--}}
