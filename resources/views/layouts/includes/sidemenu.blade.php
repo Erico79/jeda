@@ -57,7 +57,13 @@
                         <a href="{{ url('all-ss') }}" title="All Masterfiles"><i class="fa fa-lg fa-fw fa-list"></i> <span class="menu-item-parent">Subordinate Staff</span></a>
                     </li>
                 </ul>
-            {{--</li>--}}
+            <li class="top-menu-invisible">
+                <a href="#"><i class="fa fa-lg fa-fw fa-book txt-color-blue"></i> <span class="menu-item-parent">Academics</span></a>
+                <ul>
+                    <li class="">
+                        <a href="{{ url('subject') }}" title="subjects"><i class="fa fa-lg fa-fw fa-pencil"></i> <span class="menu-item-parent">subjects</span></a>
+                    </li>
+                </ul>{{--</li>--}}
             {{--<li>--}}
                 {{--<a href="inbox.html"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Outlook</span> <span class="badge pull-right inbox-badge margin-right-13">14</span></a>--}}
             {{--</li>--}}

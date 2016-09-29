@@ -24,3 +24,6 @@ Route::get('/all-guardians', 'MasterfileController@allGuardians');
 Route::get('/all-students', 'MasterfileController@allStudents');
 Route::get('/all-ss', 'MasterfileController@allSS');
 Route::resource('contact_types','ContactTypesController');
+
+// Subjects Module
+Route::get('/subjects', 'SubjectController@index');
