@@ -3,6 +3,9 @@
 @section('widget-title', 'Create Masterfile Wizard')
 @section('widget-desc', 'Allows you to register people')
 
+@push('js')
+    <script src="{{ URL::asset('my_js/masterfile/masterfile.js') }}"></script>
+@endpush
 @section('content')
     <div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
         <!-- widget options:
@@ -36,9 +39,9 @@
 
             <!-- widget content -->
             <div class="widget-body">
-
                 <div class="row">
-                    <form id="wizard-1" novalidate="novalidate">
+                    <form action="{{ url('save-mf') }}" method="post" id="wizard-1" novalidate="novalidate">
+                        {{ csrf_field() }}
                         <div id="bootstrap-wizard-1" class="col-sm-12">
                             <div class="form-bootstrapWizard">
                                 <ul class="bootstrapWizard form-wizard">
@@ -57,6 +60,9 @@
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
+                            <br/>
+                            <br/>
+                            @include('common.warnings')
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab1">
                                     @include('masterfile.basic_info')
@@ -81,17 +87,17 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <ul class="pager wizard no-margin">
-                                                <!--<li class="previous first disabled">
+                                                <li class="previous first disabled">
                                                 <a href="javascript:void(0);" class="btn btn-lg btn-default"> First </a>
-                                                </li>-->
+                                                </li>
                                                 <li class="previous disabled">
                                                     <a href="javascript:void(0);" class="btn btn-lg btn-default"> Previous </a>
                                                 </li>
-                                                <!--<li class="next last">
+                                                <li class="next last">
                                                 <a href="javascript:void(0);" class="btn btn-lg btn-primary"> Last </a>
-                                                </li>-->
+                                                </li>
                                                 <li class="next">
-                                                    <a href="javascript:void(0);" class="btn btn-lg txt-color-darken"> Next </a>
+                                                    <a href="#" id="finish-btn" class="btn btn-lg txt-color-darken"> Next </a>
                                                 </li>
                                             </ul>
                                         </div>

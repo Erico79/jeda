@@ -17,7 +17,9 @@ Route::get('/', function () {
 
 // Registration Module
 Route::get('/add-masterfile', 'MasterfileController@index');
-Route::get('/update-masterfile', 'MasterfileController@update');
+Route::post('/save-mf', 'MasterfileController@store');
+Route::post('/update-masterfile', 'MasterfileController@update');
+Route::delete('/delete-masterfile', 'MasterfileController@destroy');
 Route::get('/all-masterfiles', 'MasterfileController@allMfs');
 Route::get('/all-teachers', 'MasterfileController@allTeachers');
 Route::get('/all-guardians', 'MasterfileController@allGuardians');

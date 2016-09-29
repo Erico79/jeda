@@ -100,7 +100,7 @@ Use search to find needed section.
     * 'fixed-page-footer' - Fixes footer
     * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
-<body class="smart-style-4">
+<body class="smart-style-5">
 
 <!-- HEADER -->
 @include('layouts.includes.header')
@@ -389,7 +389,6 @@ you can add as many as you like
         //Bootstrap Wizard Validations
 
         var $validator = $("#wizard-1").validate({
-
             rules: {
                 email: {
                     email: "Your email address must be in the format of name@domain.com"
@@ -397,7 +396,7 @@ you can add as many as you like
                 fname: {
                     required: true
                 },
-                lname: {
+                surname: {
                     required: true
                 },
                 role: {
@@ -406,7 +405,7 @@ you can add as many as you like
                 gender: {
                     required: true
                 },
-                adm_no: {
+                id_no: {
                     required: true
                 },
                 wphone: {
@@ -423,7 +422,7 @@ you can add as many as you like
 
             messages: {
                 fname: "Please specify your First name",
-                lname: "Please specify your Last name",
+                surname: "Please specify your Surname",
                 email: {
                     required: "You must specify the email address",
                     email: "The email address must be in the format of name@domain.com"
@@ -458,6 +457,10 @@ you can add as many as you like
                     $validator.focusInvalid();
                     return false;
                 } else {
+                    if(index == 4){
+                        $('#wizard-1').submit();
+                    }
+
                     $('#bootstrap-wizard-1').find('.form-wizard').children('li').eq(index - 1).addClass(
                             'complete');
                     $('#bootstrap-wizard-1').find('.form-wizard').children('li').eq(index - 1).find('.step')

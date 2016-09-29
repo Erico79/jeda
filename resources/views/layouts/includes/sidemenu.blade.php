@@ -30,9 +30,6 @@
                     <li>
                         <a href="index.html" title="Dashboard"><span class="menu-item-parent">Analytics Dashboard</span></a>
                     </li>
-                    <li class="">
-                        <a href="dashboard-social.html" title="Dashboard"><span class="menu-item-parent">Social Wall</span></a>
-                    </li>
                 </ul>
             </li>
             <li class="top-menu-invisible">
