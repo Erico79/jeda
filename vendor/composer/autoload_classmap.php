@@ -23,7 +23,11 @@ return array(
     'CreateSchoolsTable' => $baseDir . '/database/migrations/2016_09_27_114609_create_schools_table.php',
     'CreateStreamsTable' => $baseDir . '/database/migrations/2016_09_27_154742_create_streams_table.php',
     'CreateStudentsTable' => $baseDir . '/database/migrations/2016_09_27_114315_create_students_table.php',
+<<<<<<< HEAD
     'CreateSubordinateStaffsTable' => $baseDir . '/database/migrations/2016_09_28_194934_create_subordinate_staffs_table.php',
+=======
+    'CreateSubjectsTable' => $baseDir . '/database/migrations/2016_09_29_083707_create_subjects_table.php',
+>>>>>>> ac262761bca46a878d3761b141b372d2b2f2ad40
     'CreateTeachersTable' => $baseDir . '/database/migrations/2016_09_27_114332_create_teachers_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
