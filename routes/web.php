@@ -32,3 +32,11 @@ Route::get('/manage_form', 'FormsController@index');
 Route::post('/manage_stream', 'FormsController@store');
 Route::post('/manage_stream/{id}', 'FormsController@update');
 Route::delete('/manage_stream/{id}', 'FormsController@destroy');
+
+Route::resource('contact_types','ContactTypesController');
+
+// subject module
+Route::get('/subject', 'SubjectController@index');
+Route::post('/add-subject','SubjectController@store');
+Route::post('/update-subject/{id}','SubjectController@update');
+Route::get('/delete-subject/{id}','SubjectController@delete');
