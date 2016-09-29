@@ -521,7 +521,7 @@
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
+@stack('js')
 </body>
 
 </html>
