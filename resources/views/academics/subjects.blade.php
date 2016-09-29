@@ -36,7 +36,7 @@
                         <td>{{ $subject->subject_name }}</td>
                         <td>{{ $subject->subject_code }}</td>
                         <td>{{ $subject->subject_status }}</td>
-                        <td>{{ $subject->mandatory }}</td>
+                        <td>{{($subject->mandatory) ? 'Yes' : 'No' }}</td>
                         <td><button class="btn btn-warning btn-xs edit-subject"><i class="fa fa-edit"></i> Edit</button> </td>
                         <td><button class="btn btn-danger btn-xs delete-subject" delete-id="{{ $subject->id }}"><i class="fa fa-trash"></i> Delete</button></td>
                     </tr>
