@@ -30,8 +30,8 @@ Route::get('/all-ss', 'MasterfileController@allSS');
 Route::resource('contact_types','ContactTypesController');
 
 // Classes Module
-Route::get('/manage_form', 'FormsController@index');
-Route::post('/manage_stream', 'FormsController@store');
+Route::get('/class', 'FormsController@index');
+Route::post('/add_class', 'FormsController@store');
 Route::post('/manage_stream/{id}', 'FormsController@update');
 Route::delete('/manage_stream/{id}', 'FormsController@destroy');
 

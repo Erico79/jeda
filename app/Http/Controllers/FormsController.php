@@ -6,41 +6,70 @@ use App\Form;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Response;
 
 class FormsController extends Controller
 {
     public function index(){
-        $form = Form::all();
-        return view('form.index')->with_form($form);
+        $form = Form::where('form_status', 1)->get();
+        return view('form.forms', array(
+            'form' => $form
+        ));
     }
 
     public function store(Request $request){
         // validation
         $rules = array(
-            'form_name' => 'required|max:255'
+            'form_name' => 'required|max:255|unique:class',
+            'form_code' => 'required|unique:class',
+            'form_status' => 'required',
         );
         $this->validate($request, $rules);
 
-        // persist the data to the db
+        // add the classes record to the database
         $form = Form::create(array(
-            'class_name' => $request->form_name,
-            'class_code' => $request->form_code,
-//            'school_id' =>
-         ));
+            'form_name' => Input::get('form_name'),
+            'form_code' => Input::get('form_code'),
+            'form_status' => Input::get('form_status')
+        ));
         $form->save();
 
+        $request->session()->flash('status', 'Class has been successfully added');
+        return redirect('class');
     }
 
     public function update(Request $request){
         // validation
+        $rules = array(
+            'form_name' => Input::get('form_name'),
+            'form_code' => Input::get('form_code'),
+            'form_status' => Input::get('form_status')
+        );
 
+        $this->validate($request, $rules);
+
+        // edit the details on the database
         Form::where('id', $request->id)
             ->update(array(
-                'class_name' => $request->form_name
+                'form_name' => Input::get('form_name'),
+                'form_code' => Input::get('form_code'),
+                'form_status' => Input::get('form_status')
             ));
     }
 
-    public function destroy(Request $request){
-        Form::destroy($request->id);
+    public function delete(Request $request){
+        $data = Form::destroy($request->id);
+        if($data){
+            $return = array(
+                'success' => true
+            );
+        }else{
+            $return = array(
+                'success' => false
+            );
+        }
+        return Response::json($return);
     }
 }

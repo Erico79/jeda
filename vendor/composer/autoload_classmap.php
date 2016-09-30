@@ -13,6 +13,7 @@ return array(
     'ContactTypeIdfks' => $baseDir . '/database/migrations/2016_09_27_163636_contact_type_idfks.php',
     'ContactTypeSeeder' => $baseDir . '/database/seeds/ContactTypeSeeder.php',
     'CorrectSurnameColumn' => $baseDir . '/database/migrations/2016_09_28_073320_correct_surname_column.php',
+    'CreateClassTable' => $baseDir . '/database/migrations/2016_09_29_160151_create_class_table.php',
     'CreateContactTypesTable' => $baseDir . '/database/migrations/2016_09_27_162746_create_contact_types_table.php',
     'CreateContactsTable' => $baseDir . '/database/migrations/2016_09_27_114536_create_contacts_table.php',
     'CreateFormsTable' => $baseDir . '/database/migrations/2016_09_27_154730_create_forms_table.php',
@@ -23,11 +24,8 @@ return array(
     'CreateSchoolsTable' => $baseDir . '/database/migrations/2016_09_27_114609_create_schools_table.php',
     'CreateStreamsTable' => $baseDir . '/database/migrations/2016_09_27_154742_create_streams_table.php',
     'CreateStudentsTable' => $baseDir . '/database/migrations/2016_09_27_114315_create_students_table.php',
-<<<<<<< HEAD
-    'CreateSubordinateStaffsTable' => $baseDir . '/database/migrations/2016_09_28_194934_create_subordinate_staffs_table.php',
-=======
     'CreateSubjectsTable' => $baseDir . '/database/migrations/2016_09_29_083707_create_subjects_table.php',
->>>>>>> ac262761bca46a878d3761b141b372d2b2f2ad40
+    'CreateSubordinateStaffsTable' => $baseDir . '/database/migrations/2016_09_28_194934_create_subordinate_staffs_table.php',
     'CreateTeachersTable' => $baseDir . '/database/migrations/2016_09_27_114332_create_teachers_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
