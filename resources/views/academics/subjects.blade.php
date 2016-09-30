@@ -37,8 +37,8 @@
                         <td>{{ $subject->subject_code }}</td>
                         <td>{{ $subject->subject_status }}</td>
                         <td>{{($subject->mandatory) ? 'Yes' : 'No' }}</td>
-                        <td><button class="btn btn-warning btn-xs edit-subject"><i class="fa fa-edit"></i> Edit</button> </td>
-                        <td><button class="btn btn-danger btn-xs delete-subject" delete-id="{{ $subject->id }}"><i class="fa fa-trash"></i> Delete</button></td>
+                        <td><button class="btn btn-warning btn-xs edit-subject" edit-id="{{$subject->id}}" data-toggle="modal" data-target="#edit_subject"><i class="fa fa-edit"></i> Edit</button> </td>
+                        <td><button class="btn btn-danger btn-xs delete-subject" delete-id="{{ $subject->id }}" data-toggle="modal"><i class="fa fa-trash"></i> Delete</button></td>
                     </tr>
                 @endforeach
             @endif
@@ -66,7 +66,7 @@
                         <fieldset>
                             <section>
                                 <div class="row">
-                                    <label class="label col col-2">name</label>
+                                    <label class="label col col-2">Name</label>
                                     <div class="col col-10">
                                         <label class="input"> </i>
                                             <input type="text" name="subject_name">
@@ -77,10 +77,10 @@
 
                             <section>
                                 <div class="row">
-                                    <label class="label col col-2">code</label>
+                                    <label class="label col col-2">Code</label>
                                     <div class="col col-10">
                                         <label class="input"></i>
-                                            <input type="text" name="subject_code">
+                                            <input type="text" Name="subject_code">
                                         </label>
                                     </div>
                                 </div>
@@ -88,13 +88,15 @@
 
                             <section>
                                 <div class="row">
-                                    <label class="label col col-2">mandatory</label>
-                                        <div class="col col-2"></div>
-                                        <div class="col col-10">
-                                            <label class="checkbox">
-                                                <input type="checkbox" name="subject_mandatory" checked="">
-                                                <i></i></label>
-                                        </div>
+                                    <label class="label col col-2">Mandatory</label>
+                                    <section class="col col-10">
+                                        <label class="select">
+                                            <select name="interested">
+                                                <option value="0" selected="" disabled="">--choose--</option>
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select> <i></i> </label>
+                                    </section>
                                 </div>
                             </section>
 
@@ -120,79 +122,74 @@
     <!-- END MODAL -->
 
     {{--modal for edit--}}
-    <div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">
+    <div class="modal fade" id="edit_subject" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                         &times;
                     </button>
-                    <h4 class="modal-title">Edit contact type </h4>
+                    <h4 class="modal-title">Update subject </h4>
                 </div>
                 <div class="modal-body no-padding">
-                    {!! Form::open(array('route'=>'contact_types.store', 'class'=>'smart-form')) !!}
-                    <fieldset>
-                        <section>
-                            <div class="row">
-                                {{ Form::label('contact_type_name','Type',array('class'=>"label col col-2")) }}
-                                <div class="col col-10">
-                                    <label class="input"> <i class="icon-append fa fa-user"></i>
-                                        {{ Form::text('contact_type_name',null,array( )) }}
-                                    </label>
+
+                    <form action="{{ url('update-subject') }}" method="post" class="smart-form">
+                        {{ csrf_field() }}
+                        <fieldset>
+                            <section>
+                                <div class="row">
+                                    <label class="label col col-2">Name</label>
+                                    <div class="col col-10">
+                                        <label class="input"> </i>
+                                            <input type="text" name="subject_name" id="subject_name">
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
 
-                        <section>
-                            <div class="row">
-                                {{ Form::label('contact_type_code','Code',array('class'=>"label col col-2")) }}
-                                <div class="col col-10">
-                                    <label class="input"> <i class="icon-append fa fa-user"></i>
-                                        {{ Form::text('contact_type_code',null,array( )) }}
-                                    </label>
+                            <section>
+                                <div class="row">
+                                    <label class="label col col-2">Code</label>
+                                    <div class="col col-10">
+                                        <label class="input"></i>
+                                            <input type="text" name="subject_code" id="subject_code">
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
 
-                        <section>
-                            <div class="row">
-                                {{ Form::label('contact_type_status','Status',array('class'=>"label col col-2")) }}
-                                <div class="col col-10">
-                                    {{ Form::select('contact_type_status',[ '1'=>'Active', '0'=>'Inactive'],null,[ 'class'=>'select2'] )}}
+                            <section>
+                                <div class="row">
+                                    <label class="label col col-2">Mandatory</label>
+                                    <section class="col col-10">
+                                        <label class="select">
+                                            <select name="interested">
+                                                <option value="0" selected="" disabled="">--choose--</option>
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select> <i></i> </label>
+                                    </section>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
 
-                        <section>
-                            <div class="row">
-                                {{ Form::label('subject_mandatory','mandatory',array('class'=>"label col col-2")) }}
-                                <div class="col col-10">
-                                    {{ Form::select('subject_mandatory',[ '1'=>'Active', '0'=>'Inactive'],null,[ 'class'=>'select2'] )}}
-                                </div>
-                            </div>
-                        </section>
+                        </fieldset>
 
+                        <footer>
+                            <button type="submit" class="btn btn-primary">
+                                save
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                Cancel
+                            </button>
 
-
-
-                    </fieldset>
-
-                    <footer>
-                        {{ Form::submit('Save',array('class'=>'btn btn-primary')) }}
-                        </button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            Cancel
-                        </button>
-                    </footer>
-
-                    {!! Form::close() !!}
-                    {{--</form>--}}
-
+                        </footer>
+                    </form>
 
 
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- END MODAL -->
 @endsection

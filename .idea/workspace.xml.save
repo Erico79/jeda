@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a5209d-6681-46ea-ad1c-e5293f1396b3" name="Default" comment="">
+<<<<<<< HEAD:.idea/workspace.xml
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/custom_js/contact_types/contact.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/streams/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/e77cfada-91a3-420f-96e3-f1ef7684f9f8.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/e77cfada-91a3-420f-96e3-f1ef7684f9f8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/contact_types/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/contact_types/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/dt.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/dt.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+=======
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/fonts-googleapis-Open-Sans.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/fonts-googleapis.css" />
@@ -51,6 +62,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/Translator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/Translator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Validator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Validator.php" />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
     </list>
     <ignored path="jeda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,6 +91,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD:.idea/workspace.xml
+      <file leaf-file-name="ContactTypesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php">
+=======
       <file leaf-file-name="contact_details.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/masterfile/contact_details.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,18 +104,22 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/contact_types/index.blade.php">
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="121" column="61" selection-start-line="121" selection-start-column="61" selection-end-line="121" selection-end-column="61" />
+            <state relative-caret-position="90">
+              <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
               <folding>
-                <element signature="e#1927#1934#0#HTML" expanded="true" />
-                <element signature="e#5022#5029#0#HTML" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD:.idea/workspace.xml
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/contact_types/index.blade.php">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="wizard.blade.php" pinned="false" current-in-tab="false">
@@ -114,11 +134,13 @@
       <file leaf-file-name="ContactTypesController.php" pinned="false" current-in-tab="false">
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php">
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+            <state relative-caret-position="313">
+              <caret line="125" column="91" selection-start-line="125" selection-start-column="91" selection-end-line="125" selection-end-column="113" />
               <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="e#1808#4848#0#HTML" expanded="false" />
+                <marker date="1475228078488" expanded="true" signature="5565:5768" ph="..." />
               </folding>
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
             </state>
@@ -144,6 +166,10 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD:.idea/workspace.xml
+      <file leaf-file-name="contact.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/custom_js/contact_types/contact.js">
+=======
 <<<<<<< HEAD
       <file leaf-file-name="dt.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/dt.blade.php">
@@ -158,9 +184,10 @@
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.php">
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+            <state relative-caret-position="126">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
             </state>
@@ -211,6 +238,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_09_27_162746_create_contact_types_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_27_163142_contact_type_fks.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_27_163636_contact_type_idfks.php" />
+<<<<<<< HEAD:.idea/workspace.xml
+=======
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/resources/views/layouts/dt.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php" />
@@ -226,18 +255,27 @@
 =======
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/dt.blade.php" />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
         <option value="$PROJECT_DIR$/resources/views/layouts/includes/page_footer.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/includes/_messages.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/dt.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/streams/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/StreamsController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php" />
         <option value="$PROJECT_DIR$/resources/views/contact_types/index.blade.php" />
+<<<<<<< HEAD:.idea/workspace.xml
+        <option value="$PROJECT_DIR$/public/custom_js/contact_types/contact.js" />
+=======
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
 =======
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
       </list>
     </option>
   </component>
@@ -255,9 +293,14 @@
     <option name="width" value="1331" />
 =======
     <option name="y" value="24" />
+<<<<<<< HEAD:.idea/workspace.xml
+    <option name="width" value="1280" />
+    <option name="height" value="696" />
+=======
     <option name="width" value="1366" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
     <option name="height" value="744" />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -287,8 +330,11 @@
 <<<<<<< HEAD
 =======
       <pane id="Scratches" />
+<<<<<<< HEAD:.idea/workspace.xml
+=======
       <pane id="Scope" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,11 +363,19 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD:.idea/workspace.xml
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
               <option name="myItemId" value="vendor" />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,15 +389,23 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD:.idea/workspace.xml
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
 =======
               <option name="myItemId" value="vendor" />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="composer" />
+              <option name="myItemId" value="contact_types" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,10 +422,6 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -375,6 +433,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD:.idea/workspace.xml
+              <option name="myItemId" value="public" />
+=======
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -385,6 +446,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,19 +460,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="custom_js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="contact_types" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,9 +482,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+<<<<<<< HEAD:.idea/workspace.xml
+          </PATH>
+          <PATH>
+=======
 <<<<<<< HEAD
           </PATH>
           <PATH>
@@ -459,13 +521,26 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="googleapis" />
 =======
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="jeda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeda" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD:.idea/workspace.xml
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+=======
               <option name="myItemId" value="contact_types" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -479,6 +554,17 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD:.idea/workspace.xml
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+=======
 <<<<<<< HEAD
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -488,11 +574,15 @@
 =======
               <option name="myItemId" value="resources" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD:.idea/workspace.xml
+      <pane id="Scope" />
+=======
 <<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -504,6 +594,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
 =======
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -588,11 +679,21 @@
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
 =======
       <workItem from="1475037948144" duration="24864000" />
+<<<<<<< HEAD:.idea/workspace.xml
+      <workItem from="1475073506023" duration="2529000" />
+      <workItem from="1475136766998" duration="1756000" />
+      <workItem from="1475138818690" duration="10599000" />
+      <workItem from="1475226309597" duration="2899000" />
+=======
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD:.idea/workspace.xml
+    <option name="totallyTimeSpent" value="60500000" />
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="29625000" />
@@ -617,18 +718,19 @@
 =======
     <option name="totallyTimeSpent" value="42717000" />
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1280" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121212125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26094005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25681818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25664622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32352942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32274246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -668,6 +770,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD:.idea/workspace.xml
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_110923_masterfiles.php" />
     <entry file="file://$PROJECT_DIR$/app/Masterfile.php">
@@ -742,6 +846,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
     <entry file="file://$PROJECT_DIR$/app/Masterfile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -753,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,13 +913,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_154451_add_role_fk.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_154730_create_classes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_154730_create_classes_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_114253_create_roles_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -866,10 +964,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="39" />
+<<<<<<< HEAD:.idea/workspace.xml
+=======
 <<<<<<< HEAD
 =======
           <folding />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
         </state>
       </provider>
     </entry>
@@ -877,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,6 +1090,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+<<<<<<< HEAD:.idea/workspace.xml
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/includes/page_footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-397">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+=======
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
           <folding />
         </state>
@@ -1009,11 +1116,34 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="505" selection-end-column="7" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
           <folding />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/includes/page_footer.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD:.idea/workspace.xml
+        <state relative-caret-position="128">
+          <caret line="164" column="51" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_114536_create_contacts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+=======
 <<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1103,21 +1233,31 @@
           <caret line="0" column="4" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="4" />
 =======
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/dt.blade.php">
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2609">
-          <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding>
-            <marker date="1475052953365" expanded="true" signature="17235:17285" ph="..." />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_114536_create_contacts_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/includes/_messages.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD:.idea/workspace.xml
+        <state relative-caret-position="108">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1548">
+          <caret line="2554" column="66" selection-start-line="2554" selection-start-column="66" selection-end-line="2554" selection-end-column="66" />
+=======
         <state relative-caret-position="391">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
           <folding />
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
         </state>
       </provider>
     </entry>
@@ -1147,18 +1287,67 @@
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
+        <state relative-caret-position="1080">
           <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+<<<<<<< HEAD:.idea/workspace.xml
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/wizard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="505" column="4" selection-start-line="505" selection-start-column="0" selection-end-line="505" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/masterfile/others.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-307">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/masterfile/contact_details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-761">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/masterfile/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/dt.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2514">
+          <caret line="215" column="25" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD:.idea/workspace.xml
+    <entry file="file://$PROJECT_DIR$/app/Stream.php">
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MasterfileController.php">
 =======
     <entry file="file://$PROJECT_DIR$/.env">
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1166,6 +1355,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD:.idea/workspace.xml
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/dt.blade.php">
@@ -1185,22 +1377,26 @@
           </folding>
 =======
     <entry file="file://$PROJECT_DIR$/composer.json">
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="306">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/streams/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1804">
-          <caret line="2554" column="66" selection-start-line="2554" selection-start-column="66" selection-end-line="2554" selection-end-column="66" />
+        <state relative-caret-position="558">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding />
 >>>>>>> 70531adee526d8e0866f91f4499ff62b64279f44
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD:.idea/workspace.xml
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StreamsController.php">
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/wizard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1217,32 +1413,43 @@
           <folding />
 =======
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php">
+>>>>>>> 20ff68170609129c4d19397900dc5955d9402372:.idea/workspace.xml.save
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        <state relative-caret-position="143">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="false" />
           </folding>
 >>>>>>> 8fafcc4a47b5a4261b7c506ed3ce59a58ecaea54
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/includes/_messages.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactTypesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/contact_types/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="121" column="61" selection-start-line="121" selection-start-column="61" selection-end-line="121" selection-end-column="61" />
+        <state relative-caret-position="313">
+          <caret line="125" column="91" selection-start-line="125" selection-start-column="91" selection-end-line="125" selection-end-column="113" />
           <folding>
-            <element signature="e#1927#1934#0#HTML" expanded="true" />
-            <element signature="e#5022#5029#0#HTML" expanded="true" />
+            <element signature="e#1808#4848#0#HTML" expanded="false" />
+            <marker date="1475228078488" expanded="true" signature="5565:5768" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/custom_js/contact_types/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

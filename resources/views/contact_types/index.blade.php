@@ -32,8 +32,8 @@
             <td>{{ $contact->contact_type_name }}</td>
             <td>{{ $contact->contact_type_code }}</td>
             <td>{{ ($contact->contact_type_status == 1 )? 'Active':'Inactive'  }}</td>
-            <td><a href="" data-toggle="modal" data-target="#edit-modal"  class="btn btn-default btn-sm">View</a></td>
-            <td></td>
+            <td><a href="{{ route('contact_types.edit',$contact->id) }}" edit-id ="{{ $contact->id }}" data-toggle="modal" data-target="#edit-modal"  class="btn btn-default btn-xs edit_contact_type">Edit</a></td>
+            <td><a href=""  data-toggle="modal" data-target="#delete-modal" delete-id ="{{ $contact->id }}" class="btn btn-default btn-xs delete_cont_type">Delete</a></td>
         </tr>
             @endforeach
         </tbody>
@@ -122,7 +122,8 @@
                     <h4 class="modal-title">Edit contact type </h4>
                 </div>
                 <div class="modal-body no-padding">
-                    {!! Form::open(array('route'=>'contact_types.store', 'class'=>'smart-form')) !!}
+                    {{--{{(isset($contact_type))? var_dump($contact_type):''}}--}}
+                    {{ Form::model((isset($contact_type))? $contact_type:'' , array('id'=>'edit-contact-type-form','class'=> 'smart-form','route'=> ['contact_types.update', (isset($contact_type))? $contact_type->id :''],'method'=>'PATCH')) }}
                     <fieldset>
                         <section>
                             <div class="row">
@@ -161,8 +162,7 @@
                     </fieldset>
 
                     <footer>
-                        {{ Form::submit('Save',array('class'=>'btn btn-primary')) }}
-                        </button>
+                        {!! Form::submit('Save Changes',array('class'=>'btn btn-primary')) !!}
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             Cancel
                         </button>
@@ -178,4 +178,47 @@
         </div>
     </div>
     <!-- END MODAL -->
+
+    {{--modal for delete--}}
+    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">Delete Contact type </h4>
+                </div>
+                <div class="modal-body no-padding">
+                <form class="smart-form" id="delete-contact-type-form">
+                    <fieldset>
+                        <section>
+                            <div class="row">
+                                <div class="col col-10">
+                                    <p> Are you sure you want to delete this contact type? </p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </fieldset>
+
+                    <footer>
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Cancel
+                        </button>
+                    </footer>
+
+                </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
 @endsection
+
+@push('js')
+<script src="{{ URL::asset('custom_js/contact_types/contact.js') }}"></script>
+@endpush
