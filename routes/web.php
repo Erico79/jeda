@@ -27,5 +27,6 @@ Route::resource('contact_types','ContactTypesController');
 
 Route::get('/subject', 'SubjectController@index');
 Route::post('/add-subject','SubjectController@store');
-Route::post('/update-subject/{id}','SubjectController@update');
+Route::post('/update-subject','SubjectController@update');
 Route::get('/delete-subject/{id}','SubjectController@delete');
+Route::get('/subject_data/{subject_id}', 'SubjectController@getSubjectData');
