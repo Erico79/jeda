@@ -25,7 +25,7 @@
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                <input class="form-control" placeholder="Admission No" type="text" name="adm_no" id="adm_no" value="{{ old('adm_no') }}">
+                <input class="form-control" placeholder="Admission No" type="text" name="id_no" id="adm_no" value="{{ old('id_no') }}">
 
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                <input class="form-control" placeholder="Last Name" type="text" name="lname" id="lname" value="{{ old('lname') }}">
+                <input class="form-control" placeholder="Surname" type="text" name="surname" id="lname" value="{{ old('surname') }}">
 
             </div>
         </div>

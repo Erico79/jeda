@@ -2,17 +2,15 @@
 
     <!-- User info -->
     <div class="login-info">
-				<span> <!-- User image size is adjusted inside CSS, it should stay as it -->
-
-					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-						<img src="{{ URL::asset('img/avatars/sunny.png') }}" alt="me" class="online" />
-						<span>
-							john.doe
-						</span>
-						<i class="fa fa-angle-down"></i>
-					</a>
-
-				</span>
+        <span> <!-- User image size is adjusted inside CSS, it should stay as it -->
+            <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+                <img src="{{ URL::asset('img/avatars/sunny.png') }}" alt="me" class="online" />
+                <span>
+                    john.doe
+                </span>
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </span>
     </div>
     <!-- end user info -->
 
@@ -29,9 +27,6 @@
                 <ul>
                     <li>
                         <a href="index.html" title="Dashboard"><span class="menu-item-parent">Analytics Dashboard</span></a>
-                    </li>
-                    <li class="">
-                        <a href="dashboard-social.html" title="Dashboard"><span class="menu-item-parent">Social Wall</span></a>
                     </li>
                 </ul>
             </li>
@@ -57,6 +52,15 @@
                         <a href="{{ url('all-ss') }}" title="All Masterfiles"><i class="fa fa-lg fa-fw fa-list"></i> <span class="menu-item-parent">Subordinate Staff</span></a>
                     </li>
                 </ul>
+            </li>
+            <li>
+                <a href="#" title="Forms"><i class="fa fa-lg fa-fw fa-bars"></i> <span class="menu-item-parent">Class</span></a>
+                <ul>
+                    <li class="">
+                        <a href="{{ url('manage_forms') }}" title="Manage Forms"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Manage Class</span></a>
+                    </li>
+                </ul>
+            </li>
             <li class="top-menu-invisible">
                 <a href="#"><i class="fa fa-lg fa-fw fa-book txt-color-blue"></i> <span class="menu-item-parent">Academics</span></a>
                 <ul>
