@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\ContactType;
+use App\Stream;
 use Illuminate\Support\Facades\Session;
 
-class ContactTypesController extends Controller
+class StreamsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class ContactTypesController extends Controller
      */
     public function index()
     {
-        $contact_types = ContactType::all();
-        return view('contact_types.index')->withcontact_types($contact_types);
+        $streams = Stream::all();
+        return view('streams.index')->withStreams($streams);
     }
 
     /**
@@ -39,28 +39,29 @@ class ContactTypesController extends Controller
      */
     public function store(Request $request)
     {
-        //var_dump($request);
         //validation
         $this->validate($request , array(
-            'contact_type_name'=>'required|min:2|max:10|unique:contact_types,contact_type_name',
-            'contact_type_code'=>'required|min:2|max:10|unique:contact_types,contact_type_code',
-            'contact_type_status'=>'required'
+            'stream_name'=>'required|min:2|max:10|unique:streams,stream_name',
+            'stream_code'=>'required|min:2|max:10|unique:streams,stream_code',
+            'stream_status'=>'required'
         ));
-        $contact_type = new ContactType();
+
+        $stream = new Stream();
 
         //define database fields
-        $contact_type->contact_type_name = $request->contact_type_name;
-        $contact_type->contact_type_code = $request->contact_type_code;
-        $contact_type->contact_type_status = $request->contact_type_status;
+        $stream->stream_name = $request->stream_name;
+        $stream->stream_code = $request->stream_code;
+        $stream->stream_status = $request->stream_status;
 
         //save the data into the database
-        $contact_type->save();
+        $stream->save();
 
         //after saving successfully display a success message
-        Session::flash('success','Contact type has been added');
+        Session::flash('success','The stream has been added');
 
 
-        return redirect()->route('contact_types.index');
+        return redirect()->route('streams.index');
+
     }
 
     /**
@@ -83,10 +84,6 @@ class ContactTypesController extends Controller
     public function edit($id)
     {
         //
-        $contact_type = ContactType::find($id);
-        return withContact_type($contact_type);
-//        return view('contact_types.index')->withContact_type($contact_type);
-
     }
 
     /**
