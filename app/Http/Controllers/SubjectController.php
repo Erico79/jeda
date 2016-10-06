@@ -32,12 +32,14 @@ class SubjectController extends Controller
             'subject_mandatory' => 'required',
         );
         $this->validate($request, $rules);
-        
+
+        $mandatory = Input::get('subject_mandatory');
+        $mandatory = ($mandatory == 'on') ? 1 : 0;
         // add the subject record to the database
         $subject = Subject::create(array(
             'subject_name' => Input::get('subject_name'),
             'subject_code' => Input::get('subject_code'),
-            'subject_mandatory' => Input::get('subject_mandatory')
+            'mandatory' => $mandatory   
         ));
         $subject->save();
         
@@ -55,7 +57,7 @@ class SubjectController extends Controller
         );
 
         $this->validate($request, $rules);
-        
+
         // edit the details on the database
         Subject::where('id', $request->id)
             ->update(array(
@@ -79,5 +81,12 @@ class SubjectController extends Controller
             );
         }
         return Response::json($return);
+    }
+
+    public function getSubjectData(Request $request){
+        $subject_id = $request->subject_id;
+        $subject = Subject::find($subject_id);
+
+        return Response::json($subject);
     }
 }

@@ -54,10 +54,10 @@
                 </ul>
             </li>
             <li>
-                <a href="#" title="Forms"><i class="fa fa-lg fa-fw fa-bars"></i> <span class="menu-item-parent">Class</span></a>
+                <a href="#" title="Form Class"><i class="fa fa-lg fa-fw fa-list txt-color-blue"></i> <span class="menu-item-parent">Class</span></a>
                 <ul>
                     <li class="">
-                        <a href="{{ url('manage_forms') }}" title="Manage Forms"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Manage Class</span></a>
+                        <a href="{{ url('class') }}" title="Manage Forms"><i class="fa fa-lg fa-fw fa-building"></i> <span class="menu-item-parent">Manage Class</span></a>
                     </li>
                 </ul>
             </li>

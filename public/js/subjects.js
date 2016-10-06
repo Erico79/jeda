@@ -20,3 +20,21 @@ $('.delete-subject').on('click', function(){
         return false;
     }
 });
+
+$('.edit-subject').on('click', function(){
+    var edit_id = $(this).attr('edit-id');
+
+    if(edit_id != ''){
+        $.ajax({
+            url: 'subject_data/'+edit_id,
+            type: 'GET',
+            dataType: 'json',
+            success: function(data){
+                $('#subject_name').val(data['subject_name']);
+                $('#subject_code').val(data['subject_code']);
+                $('#mandatory').val(data['mandatory']);
+            }
+        });
+    }
+});
+
