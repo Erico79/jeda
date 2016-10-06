@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Response;
 
 class SubjectController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         $subjects = Subject::where('subject_status', 1)->get();
         return view('academics.subjects', array(

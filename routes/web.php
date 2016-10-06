@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 // Registration Module
 Route::get('/add-masterfile', 'MasterfileController@index');
@@ -42,3 +40,7 @@ Route::get('/subject', 'SubjectController@index');
 Route::post('/add-subject','SubjectController@store');
 Route::post('/update-subject/{id}','SubjectController@update');
 Route::get('/delete-subject/{id}','SubjectController@delete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

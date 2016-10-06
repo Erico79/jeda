@@ -22,7 +22,7 @@ class MasterfileController extends Controller
     const ss = 'SS';
 
     public function __construct(){
-
+        $this->middleware('auth');
     }
 
     public function index(){

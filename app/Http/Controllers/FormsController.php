@@ -9,6 +9,11 @@ use App\Http\Requests;
 
 class FormsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         $form = Form::all();
         return view('form.index')->with_form($form);
